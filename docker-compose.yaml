@@ -82,4 +82,4 @@ volumes:
   mongodb: # docker volume create mongodb. /var/lib/docker/volumes
   redis:
   mysql:
-  rabbitmq
+  rabbitmq:
