@@ -20,7 +20,7 @@ ENV MONGO="true" \
     REDIS_URL="redis://redis:6379" \
     MONGO_URL="mongodb://mongodb:27017/users"
 
-COPY --from=build -chown=roboshop:roboshop /opt/server /opt/server
+COPY --from=build --chown=roboshop:roboshop /opt/server /opt/server
 
 RUN chown -R roboshop:roboshop /opt/server
 USER roboshop

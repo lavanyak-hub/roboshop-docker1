@@ -20,7 +20,7 @@ ENV REDIS_HOST="redis" \
     CATALOGUEE_HOST="cataloguee" \
     CARALOGUEE_PORT="8080"
 
-COPY --from=build -chown=roboshop:roboshop /opt/server /opt/server
+COPY --from=build --chown=roboshop:roboshop /opt/server /opt/server
 
 RUN chown -R roboshop:roboshop /opt/server
 USER roboshop
